@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="allReservationsContext" prefHeight="532.0" prefWidth="687.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hibernate.controller.AllRegisteredStudentsController">
+   <children>
+      <TableView fx:id="tblAllReservation" layoutX="33.0" layoutY="123.0" prefHeight="377.0" prefWidth="622.0" style="-fx-border-color: #194275; -fx-border-width: 3;">
+        <columns>
+          <TableColumn fx:id="colResId" prefWidth="123.0" text="Reservation ID" />
+            <TableColumn fx:id="colStuId" prefWidth="123.0" text="Student ID" />
+            <TableColumn fx:id="colDate" prefWidth="123.0" text="Date" />
+            <TableColumn fx:id="colRoomTpId" prefWidth="123.0" text="Room Type ID" />
+            <TableColumn fx:id="colStatus" prefWidth="123.0" text="Status" />
+        </columns>
+      </TableView>
+      <Label layoutX="34.0" layoutY="33.0" text="All Reservations" textFill="#194275">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Separator layoutX="33.0" layoutY="81.0" prefHeight="0.0" prefWidth="622.0" />
+   </children>
+</AnchorPane>
